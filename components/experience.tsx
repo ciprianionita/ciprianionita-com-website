@@ -20,7 +20,7 @@ export default function Experience() {
         if (inView && !hasAnimated) {
             setHasAnimated(true);
         }
-    }, [inView]);
+    }, [inView, hasAnimated]);
 
     return (
         <section
@@ -47,16 +47,14 @@ export default function Experience() {
                             contentArrowStyle={{
                                 borderRight:
                                     theme === "light"
-                                        ? "0.4rem solid #9ca3af"
-                                        : "0.4rem solid rgba(255, 255, 255, 0.5)",
+                                        ? "0.5rem solid #e5e7eb"
+                                        : "0.5rem solid #1d2432",
                             }}
                             date={item.date}
                             icon={item.icon}
                             iconStyle={{
                                 background:
-                                    theme === "light"
-                                        ? "white"
-                                        : "rgba(255, 255, 255, 0.15)",
+                                    theme === "light" ? "white" : "#343a47",
                                 fontSize: "1.5rem",
                             }}
                         >
