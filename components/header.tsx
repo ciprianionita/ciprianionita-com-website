@@ -34,11 +34,10 @@ export default function Header() {
                         >
                             <Link
                                 className={clsx(
-                                    "flex w-full items-center justify-center px-3 py-3 transition text-gray-500 hover:text-gray-300",
-                                    {
-                                        "text-gray-300":
-                                            activeSection === link.name,
-                                    }
+                                    "flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-300",
+                                    activeSection === link.name
+                                        ? "text-gray-300"
+                                        : "text-gray-500"
                                 )}
                                 href={link.hash}
                                 onClick={() => {
