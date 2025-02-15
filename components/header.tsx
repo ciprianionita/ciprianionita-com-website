@@ -6,16 +6,10 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-// import { useEffect } from "react";
-// import { followCursor } from "@/lib/cursor";
 
 export default function Header() {
     const { activeSection, setActiveSection, setTimeOfLastClick } =
         useActiveSectionContext();
-
-    // useEffect(() => {
-    //     followCursor();
-    // }, []);
 
     return (
         <header className="z-[999] relative">
