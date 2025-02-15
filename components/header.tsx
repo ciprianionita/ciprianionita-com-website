@@ -6,15 +6,26 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+// import { useEffect } from "react";
+// import { followCursor } from "@/lib/cursor";
 
 export default function Header() {
     const { activeSection, setActiveSection, setTimeOfLastClick } =
         useActiveSectionContext();
 
+    // useEffect(() => {
+    //     followCursor();
+    // }, []);
+
     return (
         <header className="z-[999] relative">
+            <span className="cursor"></span>
+            <div
+                id="header-bg"
+                className="fixed top-0 left-0 w-full h-[100px] bg-[rgba(255, 255, 255, 0.2)] shadow-[0 4px 30px rgba(0, 0, 0, 0.1)] backdrop-blur-[5px]"
+            ></div>
             <motion.div
-                className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+                className="fixed top-0 left-1/2 h-[4.5rem] w-full bg-gray-950 border-black/40 bg-opacity-75 rounded-none border border-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
             ></motion.div>
@@ -29,9 +40,9 @@ export default function Header() {
                         >
                             <Link
                                 className={clsx(
-                                    "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                                    "flex w-full items-center justify-center px-3 py-3 transition text-gray-500 hover:text-gray-300",
                                     {
-                                        "text-gray-950 dark:text-gray-200":
+                                        "text-gray-300":
                                             activeSection === link.name,
                                     }
                                 )}
@@ -44,7 +55,7 @@ export default function Header() {
                                 {link.name}
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                                        className="rounded-full absolute inset-0 -z-10 bg-gray-800"
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",

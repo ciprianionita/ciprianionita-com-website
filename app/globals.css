@@ -10,6 +10,59 @@ html.dark {
     --line-color: rgba(255, 255, 255, 0.2);
 }
 
+body {
+    font-family: ui-monospace, "SFMono-Regular", "Menlo", "Monaco", "Consolas",
+        "Liberation Mono", "Courier New", monospace;
+}
+
 .borderBlack {
     @apply border border-black/10;
+}
+
+.grid-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #191b1d; */
+    background-image: linear-gradient(#212223 0.1em, transparent 0),
+        linear-gradient(90deg, #212223 0.1em, transparent 0);
+    background-size: 1em 1em;
+    /* mask-image: linear-gradient(
+        180deg,
+        transparent,
+        #fff 30%,
+        #fff 50%,
+        rgba(0, 0, 0, 0.3)
+    ); */
+    overflow: clip;
+    opacity: 0.05;
+}
+
+#header-bg {
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.cursor {
+    background-color: whitesmoke;
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    mix-blend-mode: exclusion;
+    pointer-events: none;
+    will-change: transform;
+    transition: transform linear 0.125s, opacity 0.125s ease-in 0.125s;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 9999;
 }

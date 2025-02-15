@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
@@ -11,7 +12,7 @@ export default function Projects() {
 
     return (
         <section id="projects" className="scroll-mt-28 mb-28" ref={ref}>
-            <SectionHeading>My Projects</SectionHeading>
+            <SectionHeading>My Latest Projects</SectionHeading>
             <div>
                 {projectsData.map((project, index) => (
                     <React.Fragment key={index}>
@@ -19,6 +20,12 @@ export default function Projects() {
                     </React.Fragment>
                 ))}
             </div>
+            <Link
+                className="group flex items-center gap-2 w-fit px-7 py-3 mt-8 mx-auto bg-gray-950 text-white rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                href="#"
+            >
+                View All
+            </Link>
         </section>
     );
 }
