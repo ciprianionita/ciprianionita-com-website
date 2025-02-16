@@ -13,10 +13,9 @@ export default function Header() {
 
     return (
         <header className="z-[999] relative">
-            <span className="cursor"></span>
             <div
                 id="header-bg"
-                className="fixed top-0 left-0 w-full h-[100px] bg-[rgba(255, 255, 255, 0.2)] shadow-[0 4px 30px rgba(0, 0, 0, 0.1)] backdrop-blur-[5px]"
+                className="fixed top-0 left-0 w-full h-[120px] bg-[rgba(255, 255, 255, 0.2)] shadow-[0 4px 30px rgba(0, 0, 0, 0.1)] backdrop-blur-[5px]"
             ></div>
             <motion.div
                 className="fixed top-0 left-1/2 h-[4.5rem] w-full bg-gray-950 border-black/40 bg-opacity-75 rounded-none border border-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"

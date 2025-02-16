@@ -1,11 +1,8 @@
-// const cursor = document.querySelector("span.cursor");
 const body = document.querySelector("body");
 
 const cursor = document.createElement("span");
 cursor.classList.add("cursor");
 body.appendChild(cursor);
-
-console.log("LOADED");
 
 let timeout;
 

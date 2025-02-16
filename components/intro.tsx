@@ -62,8 +62,9 @@ export default function Intro() {
                 <span className="font-bold">8+ years</span> of experience. I
                 enjoy building <span className="italic">sites & apps</span>. My
                 main focus is <span className="underline">WordPress</span> and{" "}
-                <span className="underline">React (Next.js)</span>.
+                <span className="underline">React</span>.
             </motion.h1>
+
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
                 initial={{ opacity: 0, y: 100 }}
@@ -82,27 +83,88 @@ export default function Intro() {
                     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
                 <a
-                    className="group bg-white/10 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition borderBlack"
+                    className="group bg-white/10 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
                     href="/CV.pdf"
                     download
                 >
                     Download CV{" "}
                     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
-                <a
-                    className="bg-white/10 p-4 text-white/60 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
-                    href="https://www.linkedin.com/in/ciprian-ionita/"
-                    target="_blank"
-                >
-                    <BsLinkedin />
-                </a>
-                <a
-                    className="bg-white/10 p-4 text-white/60 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition borderBlack"
-                    href="https://github.com/ciprianionita"
-                    target="_blank"
-                >
-                    <FaGithubSquare />
-                </a>
+                <span className="flex gap-2">
+                    <a
+                        className="bg-white/10 grid place-content-center w-[3.25rem] h-[3.25rem] p-3 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition "
+                        href="https://www.linkedin.com/in/ciprian-ionita/"
+                        target="_blank"
+                    >
+                        <BsLinkedin />
+                    </a>
+                    <a
+                        className="bg-white/10 grid place-content-center w-[3.25rem] h-[3.25rem] p-3 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition "
+                        href="https://github.com/ciprianionita"
+                        target="_blank"
+                    >
+                        <FaGithubSquare />
+                    </a>
+                </span>
+            </motion.div>
+
+            <motion.div
+                className="flex items-center justify-center mt-4"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+            >
+                250+{" "}
+                <span className="inline-block mx-2" aria-label="five-star">
+                    <span className="flex items-center">
+                        <svg
+                            className="w-4 h-4 text-yellow-300"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                        >
+                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg
+                            className="w-4 h-4 text-yellow-300 ms-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                        >
+                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg
+                            className="w-4 h-4 text-yellow-300 ms-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                        >
+                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg
+                            className="w-4 h-4 text-yellow-300 ms-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                        >
+                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                        <svg
+                            className="w-4 h-4 text-yellow-300 ms-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                        >
+                            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                        </svg>
+                    </span>
+                </span>{" "}
+                on Fiverr
             </motion.div>
         </section>
     );

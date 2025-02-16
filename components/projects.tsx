@@ -20,12 +20,6 @@ export default function Projects() {
                     </React.Fragment>
                 ))}
             </div>
-            <Link
-                className="group flex items-center gap-2 w-fit px-7 py-3 mt-8 mx-auto bg-gray-950 text-white rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-                href="#"
-            >
-                View All
-            </Link>
         </section>
     );
 }

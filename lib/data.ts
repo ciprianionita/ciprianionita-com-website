@@ -1,10 +1,6 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import imgNattyPell from "@/public/nattypell.png";
+import imgKingSoftware from "@/public/king-software.png";
+import imgATBConcessions from "@/public/atbconcessions.png";
 
 export const links = [
     {
@@ -16,16 +12,16 @@ export const links = [
         hash: "#about",
     },
     {
-        name: "Services",
-        hash: "#services",
+        name: "Stack",
+        hash: "#stack",
     },
     {
         name: "Projects",
         hash: "#projects",
     },
     {
-        name: "Skills",
-        hash: "#skills",
+        name: "Services",
+        hash: "#services",
     },
     {
         name: "Contact",
@@ -33,42 +29,71 @@ export const links = [
     },
 ] as const;
 
-export const projectsData = [
+export const stackData = [
     {
-        title: "CorpComment",
-        description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+        title: "WordPress",
+        url: "/icon-wordpress.svg",
     },
     {
-        title: "rmtDev",
-        description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+        title: "WooCommerce",
+        url: "/icon-woocommerce.svg",
     },
     {
-        title: "Word Analytics",
-        description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+        title: "React",
+        url: "/icon-react.svg",
+    },
+    {
+        title: "Next.js",
+        url: "/icon-nextjs.svg",
+    },
+    {
+        title: "Astro JS",
+        url: "/icon-astro.svg",
+    },
+    {
+        title: "Figma",
+        url: "/icon-figma.svg",
     },
 ] as const;
 
-export const skillsData = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "TypeScript",
-    "PHP",
-    "MySQL",
-    "WordPress",
-    "React",
-    "Next.js",
-    "GraphQL",
-    "Git",
-    "Tailwind",
-    "Framer Motion",
+export const projectsData = [
+    {
+        title: "Natty Pell",
+        description:
+            "I built an ecommerce store for a local handmade leather goods brand, integrating payment and shipping services. First I designed the website in Figma and then developed it.",
+        tags: ["WordPress", "WooCommerce", "Divi", "CSS", "Figma"],
+        imageUrl: imgNattyPell,
+    },
+    {
+        title: "King Software",
+        description:
+            "A WooCommerce store I built for a software license provider. Focused on a clean, modern, and intuitive design, it highlights products, uses clear call-to-actions, and builds trust with detailed guides and partner logos.",
+        tags: ["WordPress", "WooCommerce", "PHP", "CSS", "Figma"],
+        imageUrl: imgKingSoftware,
+    },
+    {
+        title: "ATB Concessions",
+        description:
+            "Designed a static HTML website from scratch with Figma and developed it using Astro JS framework for optimal performance and user experience.",
+        tags: ["Astro", "HTML", "CSS", "JavaScript", "Figma"],
+        imageUrl: imgATBConcessions,
+    },
+] as const;
+
+export const servicesData = [
+    {
+        title: "Web Development",
+        description:
+            "Bringing ideas to life with robust and scalable web solutions.",
+    },
+    {
+        title: "Web Design",
+        description:
+            "Crafting visually captivating and user-friendly websites for online success.",
+    },
+    {
+        title: "SEO Optimization",
+        description:
+            "Elevating online visibility and driving organic traffic through strategies.",
+    },
 ] as const;

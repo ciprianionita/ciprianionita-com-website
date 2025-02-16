@@ -11,7 +11,7 @@ export default function About() {
     return (
         <motion.section
             ref={ref}
-            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+            className="mb-28 max-w-[50rem] text-center leading-8 sm:mb-40 scroll-mt-28"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}
@@ -19,31 +19,27 @@ export default function About() {
         >
             <SectionHeading>About me</SectionHeading>
             <p className="mb-3">
-                After graduating with a degree in{" "}
-                <span className="font-medium">Accounting</span>, I decided to
-                pursue my passion for programming. I enrolled in a coding
-                bootcamp and learned{" "}
-                <span className="font-medium">full-stack web development</span>.{" "}
-                <span className="italic">My favorite part of programming</span>{" "}
-                is the problem-solving aspect. I{" "}
-                <span className="underline">love</span> the feeling of finally
-                figuring out a solution to a problem. My core stack is{" "}
-                <span className="font-medium">
-                    React, Next.js, Node.js, and MongoDB
-                </span>
-                . I am also familiar with TypeScript and Prisma. I am always
-                looking to learn new technologies. I am currently looking for a{" "}
-                <span className="font-medium">full-time position</span> as a
-                software developer.
+                My design career began in the printing industry, where I honed
+                my skills in layout and typography. But the static nature of
+                print eventually led me to explore the dynamic world of web
+                development.
+            </p>
+            <p className="mb-3">
+                I took the leap into freelancing, eager to build interactive
+                experiences online. Starting on freelancing platforms, I worked
+                tirelessly to refine my portfolio and connect with clients. My
+                dedication and passion for crafting user-friendly websites
+                quickly earned me a solid reputation, leading to direct client
+                collaborations.
             </p>
             <p>
-                <span className="italic">When I&apos;m not coding</span>, I
-                enjoy playing video games, watching movies, and playing with my
-                dog. I also enjoy{" "}
-                <span className="font-medium">learning new things</span>. I am
-                currently learning about{" "}
-                <span className="font-medium">history and philosophy</span>.
-                I&apos;m also learning how to play the guitar.
+                Since then, I&apos;ve partnered with dozens of clients
+                worldwide, helping them establish and enhance their online
+                presence. From e-commerce sites to custom web applications,
+                I&apos;ve had the privilege of bringing their digital visions to
+                life. The journey from print to pixels has been an exciting one,
+                and I&apos;m thrilled to continue building impactful web
+                solutions.
             </p>
         </motion.section>
     );

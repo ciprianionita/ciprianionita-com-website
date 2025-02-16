@@ -3,8 +3,9 @@ import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
 import Services from "@/components/services";
 import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+import Stack from "@/components/stack";
 import Contact from "@/components/contact";
+import ScrollToTop from "@/components/scroll-top";
 
 export default function Home() {
     return (
@@ -12,10 +13,11 @@ export default function Home() {
             <Intro />
             <SectionDivider />
             <About />
-            <Services />
+            <Stack />
             <Projects />
-            <Skills />
+            <Services />
             <Contact />
+            <ScrollToTop />
         </main>
     );
 }
