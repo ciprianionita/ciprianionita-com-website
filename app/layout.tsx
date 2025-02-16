@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeContextProvider from "@/context/theme-context";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata = {
     title: "Ciprian Ionita | Web Developer",
@@ -39,6 +40,7 @@ export default function RootLayout({
                 </ThemeContextProvider>
                 <Script src="/cursor.js" />
             </body>
+            <GoogleAnalytics gaId="G-XTESVHD6WS" />
         </html>
     );
 }
