@@ -1,4 +1,3 @@
-// @ts-expect-error - useFormStatus exists in react-dom but types are not yet updated
 import { useFormStatus } from "react-dom";
 import { FaPaperPlane } from "react-icons/fa";
 
