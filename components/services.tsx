@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import SectionHeading from "./section-heading";
 import { servicesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hook";
@@ -27,7 +26,7 @@ export default function Services() {
         <section
             ref={ref}
             id="services"
-            className="mb-28 max-w-[50rem] scroll-mt-28 text-center sm:mb-40"
+            className="mb-28 max-w-200 scroll-mt-28 text-center sm:mb-40"
         >
             <SectionHeading>My Services</SectionHeading>
             <ul className="grid sm:grid-cols-3 gap-4">

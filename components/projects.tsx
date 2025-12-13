@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
@@ -34,9 +34,9 @@ export default function Projects() {
                 <button
                     onClick={handleLoadMore}
                     disabled={allVisible}
-                    className={`px-7 py-3 bg-white bg-opacity-10 text-white rounded-full transition-all ${
+                    className={`px-7 py-3 bg-white/10 text-white rounded-full transition-all ${
                         allVisible
-                            ? "disabled:scale-100 disabled:bg-opacity-65 cursor-not-allowed"
+                            ? "disabled:scale-100 disabled:bg-white/65 cursor-not-allowed"
                             : "hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
                     }`}
                 >
