@@ -1,6 +1,6 @@
 {
-    "name": "next-js-test",
-    "version": "0.1.0",
+    "name": "ciprianionita.com",
+    "version": "0.2.0",
     "private": true,
     "scripts": {
         "dev": "next dev",
@@ -9,20 +9,20 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@next/third-parties": "^16.0.10",
+        "@next/third-parties": "^16.4.3",
         "@react-email/components": "^1.0.1",
         "@react-email/tailwind": "^2.0.1",
         "@types/node": "25.0.1",
         "autoprefixer": "10.4.22",
         "clsx": "^2.1.1",
         "eslint": "9.39.2",
-        "eslint-config-next": "16.0.10",
+        "eslint-config-next": "16.4.3",
         "framer-motion": "^12.23.26",
-        "next": "^16.0.10",
+        "next": "^16.4.3",
         "postcss": "8.5.6",
         "prettier": "^3.7.4",
-        "react": "19.2.3",
-        "react-dom": "19.2.3",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
         "react-hot-toast": "^2.6.0",
         "react-icons": "^5.5.0",
         "react-intersection-observer": "^10.0.0",
@@ -33,7 +33,7 @@
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4.1.18",
-        "@types/react": "19.2.7",
-        "@types/react-dom": "19.2.3"
+        "@types/react": "19.3.0",
+        "@types/react-dom": "19.3.0"
     }
 }
