@@ -23,10 +23,10 @@ export const sendEmail = async (formData: FormData) => {
         };
     }
 
-    let data;
+    let response;
 
     try {
-        data = await resend.emails.send({
+        response = await resend.emails.send({
             from: "ciprianionita.com <no-reply@ciprianionita.com>",
             to: "ciprian@ciprianionita.com",
             subject: "CiprianIonita.com - New Message",
@@ -43,7 +43,14 @@ export const sendEmail = async (formData: FormData) => {
         };
     }
 
+    // Resend returns API failures in the response instead of throwing
+    if (response.error) {
+        return {
+            error: getErrorMessage(response.error),
+        };
+    }
+
     return {
-        data,
+        data: response.data,
     };
 };
