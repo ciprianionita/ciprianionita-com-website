@@ -4,6 +4,14 @@ import imgATBConcessions from "@/public/atbconcessions.png";
 import imgEsthemax from "@/public/esthemax.png";
 import imgTSA from "@/public/torontostrikingacademy.png";
 import imgLiquidBeauty from "@/public/liquidbeauty.png";
+import imgClinicaPrestige from "@/public/clinicaprestige.png";
+import imgNewActivcont from "@/public/newactivcont.png";
+import imgSRMFPBA from "@/public/srmfpba.png";
+import imgUntoldCreators from "@/public/untoldcreators.png";
+import imgNotariatMagurele from "@/public/notariatmagurele.png";
+import imgScentoverse from "@/public/scentoverse.png";
+import imgSmartDrivingPro from "@/public/smartdrivingpro.png";
+import imgDrBray from "@/public/drbray.png";
 
 export const links = [
     {
@@ -60,6 +68,70 @@ export const stackData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "Clinica Prestige",
+        description:
+            "Designed and developed a custom WordPress block theme for a medical clinic, with Gutenberg blocks for specialties, doctors, imaging services and online booking.",
+        tags: ["WordPress", "Gutenberg", "PHP", "SCSS", "JavaScript"],
+        imageUrl: imgClinicaPrestige,
+        url: "https://www.clinicaprestige.ro",
+    },
+    {
+        title: "New Activcont",
+        description:
+            "Designed and developed a WordPress site for an accounting firm with Elementor and WooCommerce, featuring online service orders and a client portal for documents.",
+        tags: ["WordPress", "WooCommerce", "Elementor", "PHP", "SCSS"],
+        imageUrl: imgNewActivcont,
+        url: "https://newactivcont.ro",
+    },
+    {
+        title: "SRMFPBA",
+        description:
+            "Designed and developed a custom WordPress block theme for a Romanian medical society, with Gutenberg blocks, bilingual content and course pages with registration forms.",
+        tags: ["WordPress", "Gutenberg", "PHP", "SCSS", "JavaScript"],
+        imageUrl: imgSRMFPBA,
+        url: "https://srmfpba.ro",
+    },
+    {
+        title: "Untold Creators by Visa",
+        description:
+            "Developed a custom WordPress block theme for a music mentorship program, with a creators section and a public voting system for favorite creators.",
+        tags: ["WordPress", "PHP", "SCSS", "JavaScript"],
+        imageUrl: imgUntoldCreators,
+        url: "https://www.untoldcreators.com",
+    },
+    {
+        title: "Birou Notarial Oancea & Ciuhan",
+        description:
+            "Developed a static website for a notary office with Astro and Tailwind CSS, using Sanity CMS to manage FAQs and required-document lists.",
+        tags: ["Astro", "Tailwind CSS", "Sanity", "Vercel"],
+        imageUrl: imgNotariatMagurele,
+        url: "https://www.notariatmagurele.ro",
+    },
+    {
+        title: "Scentoverse",
+        description:
+            "Developed a WooCommerce perfume store on WordPress, with custom features for referrals, a customer wallet, perfume samples and partner pages.",
+        tags: ["WordPress", "WooCommerce", "Elementor", "PHP", "SCSS"],
+        imageUrl: imgScentoverse,
+        url: "https://scentoverse.ro",
+    },
+    {
+        title: "Smart Driving PRO",
+        description:
+            "Designed and developed a WordPress site with Elementor for a Cardiff driving school, with lesson pages, student testimonials, a booking page and a blog.",
+        tags: ["WordPress", "Elementor", "PHP", "SCSS", "JavaScript"],
+        imageUrl: imgSmartDrivingPro,
+        url: "https://smartdrivingpro.com",
+    },
+    {
+        title: "Dr. Peter Bray",
+        description:
+            "Designed and developed a custom WordPress theme with Elementor for a Toronto plastic surgeon, with a before-and-after gallery and a resource center.",
+        tags: ["WordPress", "Elementor", "PHP", "SCSS", "JavaScript"],
+        imageUrl: imgDrBray,
+        url: "https://drbray.ca",
+    },
     {
         title: "Natty Pell",
         description:
