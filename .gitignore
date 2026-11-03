@@ -16,6 +16,8 @@
 /build
 
 # misc
+DOCS/
+IMAGINI/
 .DS_Store
 *.pem
 
@@ -34,6 +36,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# diverse
-DOCS/
-IMAGINI/
+# ai agents
+.agents/
+.claude/
+.github/
+.opencode/
+.mcp.json
+AGENTS.md
+opencode.json
+PROJECT_MEMORY.md
+skills-lock.json
